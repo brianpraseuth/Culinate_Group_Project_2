@@ -25,7 +25,7 @@
   a {
     font-family: 'Grand Hotel', cursive;
     font-size: 3vw;  
-    color: brown
+    color: #1b3a4b
   }
 
   .grand-hotel {
@@ -66,7 +66,6 @@
   }
   
   .searchText {
-    color: rgb(55, 38, 12);
   }
   
   #submit {
