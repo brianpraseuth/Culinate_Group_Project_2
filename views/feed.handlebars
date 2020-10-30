@@ -1,25 +1,25 @@
 	<div class="jumbotron">
 	    <div class="searchForm">
-	        <h1 class="nav-brand">Welcome to Culinate!</h1>
-	        <p class="lead">This is a simple website to look up delicious recipes to cook.</p>
+	        <h1 class="nav-brand">the Feed</h1>
+	                <a href="/">Search Recipes</a>
+		<a href="/feed">Saved Recipes</a>
 	        <hr class="my-4">
-	        <div class="">
-	            <div id="recipeCards">
-	                <h2>Recipes Saved:</h2>
-	                <div class="container">
-                        <div class="recipeColumn">
-                            <div class="card">
-                                <div class="card-content">
-                                    {{#each recipe}}
-	                                <h4>Entree Name: {{this.entreeName}}</h4>
-	                                <img>Entree Image: {{this.entreeImage}}
-	                                <p>Recipe: {{this.entreeRecipe}}</p>
-	                                {{/each}}
-                                </div>
-                            </div>
-                        </div>
-	                </div>
-	            </div>
-	        </div>
+            <h2 class="grand-hotel second-heading">Saved Recipes</h2>
 	    </div>
+	</div>
+
+	<div class="container">
+	    <div id="recipeCards">
+            <div class="row">
+	        {{#each recipe}}
+	        <div class="recipe-card">
+	            <h3 class="text-center">{{this.name}}</h3>
+	            <img class="entreeImage" src={{this.recipeImage}}>
+	            <p>{{this.instructions}}</p>
+                <button class="btn-light delete-recipe" data-id="{{this.id}}">DELETE!</button>
+	        </div>
+	        {{/each}}
+            </div>
+	    </div>
+	</div>
 	</div>

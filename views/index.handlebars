@@ -1,7 +1,8 @@
 	<div class="jumbotron">
 		<div class="searchForm">
             <h1 class="nav-brand">Welcome to Culinate!</h1>
-		<p class="lead">This is a simple website to look up delicious recipes to cook.</p>
+        <a href="/">Search Recipes</a>
+		<a href="/feed">Saved Recipes</a>
 		<hr class="my-4">
 		<p>Click on the button before to search for the perfect meal to make for yourself or you and a friend! If you
 			love it, save it for another time!</p>
@@ -13,13 +14,10 @@
 					<button type="submit" id="submit" class="btn btn-primary">Submit</button>
 				</div>
 			</form>
-
-			<div class="">
-				<div id="recipeCards">
-					<h2>Recipes Found:</h2>
-					<p class="attachPlease"></p>
-                    {{recipes}}
-				</div>
+	    </div>
+    </div>
+			
+            <div class="container">
+				<div id="recipeCards"></div>
 			</div>
-		</div>
-	</div>
+		

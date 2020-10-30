@@ -1,82 +1,91 @@
 @media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
   }
-}
+  
+  body {
+    background-image: url("/images/cookingBackground.jpg");
+  }
+  
+  .marketing {
+    margin-top: 100px;
+  }
+  
+  .navbar {
+    opacity: 0.8;
+    height: 100px;
+  }
+  
+  .nav-brand {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 12vw;
+  }
 
-body {
-  background-image: url("../images/cookingBackground.jpg");
-}
+  a {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 3vw;  
+    color: brown
+  }
 
-.marketing {
-  margin-top: 100px;
-}
+  .grand-hotel {
+    font-family: 'Grand Hotel', cursive;   
+  }
 
-.navbar {
-  opacity: 0.8;
-  height: 100px;
-}
-
-.navbar-brand {
-  font-family: "Josefin Slab", serif;
-  font-size: 50px;
-}
-
-.nav-link {
-  font-family: "Josefin Slab", serif;
-  font-size: 30px;
-}
-
-a:hover {
-  color: white;
-  opacity: 1;
-  font-size: 32px;
-}
-
-.active {
-  text-decoration: none;
-  color: white;
-  opacity: 1;
-}
-
-.jumbotron {
-  background-color: rgb(220, 245, 228, 0.5);
-  margin-bottom: 200px;
-}
-
-.highlight {
-  margin-top: 30px;
-  margin-left: 50px;
-  margin-bottom: 30px;
-  margin-right: 50px;
-  padding: 15px;
-  background-color: #f9faf870;
-}
-
-.searchForm {
-  text-align: center;
-}
-
-.searchText {
-  color: rgb(55, 38, 12);
-}
-
-#submit {
-  background-color: rgb(55, 38, 12);
-  color: white;
-}
-
-.card {
-  background-color: whitesmoke;
-  padding: 5px;
-  height: auto;
-  width: 80%;
-  font-size: smaller;
-  opacity: 90%;
-  margin-bottom: 5px;
-}
-
-.entreeImage {
- max-height: 40%;
- max-width: 40%;
-}
+  .second-heading {
+      font-size: 6vw;
+  }
+  
+  .nav-link {
+    font-family: "Josefin Slab", serif;
+    font-size: 30px;
+  }
+  
+  .active {
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+  }
+  
+  .jumbotron {
+    background-color: rgb(220, 245, 228, 0.5);
+    margin-bottom: 200px;
+  }
+  
+  .highlight {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    padding: 15px;
+    background-color: #f9faf870;
+  }
+  
+  .searchForm {
+    text-align: center;
+  }
+  
+  .searchText {
+    color: rgb(55, 38, 12);
+  }
+  
+  #submit {
+    background-color: rgb(55, 38, 12);
+    color: white;
+  }
+  
+  .recipe-card {
+    background-color: white;
+    padding: 5px;
+    height: 500px;
+    width: 30%;
+    font-size: smaller;
+    margin: 10px;
+    border: solid 2px black;
+    overflow: scroll;
+  }
+  
+  .entreeImage {
+    width: 100%;
+  }
+   
