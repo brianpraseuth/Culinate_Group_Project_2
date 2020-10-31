@@ -5,14 +5,14 @@ if (process.env.JAWSDB_URL) {
   // Database is JawsDB on Heroku
   connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
-var connection = mysql.createConnection({
+connection = mysql.createConnection({
   host: "fugfonv8odxxolj8.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
   port: 3306,
   user: "ze8k5sevvrgnhz3k",
   password: "nh1lsni1p8duua5h",
   database: "	d05wo8ltmn7eekjc"
 });
-
+}
 // Make connection.
 connection.connect(function(err) {
   if (err) {
