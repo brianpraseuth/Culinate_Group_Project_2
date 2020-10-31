@@ -1,12 +1,16 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
-
+var connection;
+if (process.env.JAWSDB_URL) {
+  // Database is JawsDB on Heroku
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
 var connection = mysql.createConnection({
-  host: "localhost",
+  host: "fugfonv8odxxolj8.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
   port: 3306,
-  user: "root",
-  password: "1234",
-  database: "recipes_db"
+  user: "ze8k5sevvrgnhz3k",
+  password: "nh1lsni1p8duua5h",
+  database: "	d05wo8ltmn7eekjc"
 });
 
 // Make connection.
